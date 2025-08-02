@@ -1,0 +1,28 @@
+### Crafter: General Descriptions and Tips
+Crafter is a sandbox game where players gather resources, craft tools, and survive. 
+You are possibly working with other agents to collaboratively mine a diamond as soon as possible! Only one agent needs to gather the diamond and the team wins.
+
+[# I. Key Features]
+- Unique worlds with different terrains.
+- Resource gathering (wood, stone, coal, iron, diamond).
+- Crafting system for tools.
+- Survival tips: health, drink, hunger, and energy management.
+- Share materials.
+
+[# II. Getting Started]
+0. Read the collaboration policy if exist.
+1. Collect resources.
+2. Craft tools.
+3. Collect advanced materials.
+4. Craft advanced tools.
+5. Collect diamond.
+
+[# III. Tips for Success]
+- Continuously improve your tools based on crafting hierarchy.
+- Move on to the next goal if the current goal is completed.
+- Learn from setbacks and adapt your strategies.
+- Collaboration:
+    - Each agent has a unique ID (starting from 0, 1, 2...).
+    - Every agent helps the previous one (e.g., Agent 1 helps Agent 0; Agent 2 helps Agent 1).
+    - Agents should share resources *immediately* to the previous agent whenever they need.
+    - Prioritize collaboration policy; if no request, work on advancing your tools.

@@ -1,0 +1,54 @@
+Collect wood            6
+Place table            10
+Make wood pickaxe      14
+Collect stone          17
+Make stone pickaxe     24
+Collect iron           37
+Collect coal           42
+Place furnace          77
+Make iron pickaxe      83
+Collect diamond       127
+
+Collect wood            5
+Place table             9
+Make wood pickaxe      18
+Collect stone          24
+Make stone pickaxe     32
+Collect iron           48
+Collect coal           52
+Place furnace          91
+Make iron pickaxe      98
+Collect diamond       115
+
+Collect wood            4
+Place table            10
+Make wood pickaxe      16
+Collect stone          34
+Make stone pickaxe     53
+Collect iron           91
+Collect coal          149
+Place furnace         167
+Make iron pickaxe     170
+Collect diamond       190
+
+Collect wood            6
+Place table            10
+Make wood pickaxe      16
+Collect stone          22
+Make stone pickaxe     28
+Collect iron           33
+Collect coal           78
+Place furnace          94
+Make iron pickaxe     100
+Collect diamond       104
+
+Collect wood            5
+Place table             9
+Make wood pickaxe      17
+Collect stone          20
+Make stone pickaxe     24
+Collect iron           67
+Collect coal           99
+Place furnace         132
+Make iron pickaxe     143
+Collect diamond       164

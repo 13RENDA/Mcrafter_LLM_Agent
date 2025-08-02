@@ -1,0 +1,53 @@
+### Enviornment Description
+[# I. Prerequisites and Crafting Hierarchy]
+- Collect Cow: {facing: cow}
+- Collect Drink: {facing: water}
+- Collect Wood: {facing: tree}
+- Collect Stone: {facing: stone, wood pickaxe: 1}
+- Collect Coal: {facing: coal, wood pickaxe: 1}
+- Collect Iron: {facing: iron, stone pickaxe: 1}
+- collect Diamond: {facing: diamond, iron pickaxe: 1}
+- Place Table: {facing: grass, wood: 2}
+- Place Furnace: {facing: grass, stone: 4}
+- Make Wood Pickaxe: {facing: table, wood: 1}
+- Make Stone Pickaxe: {facing: table, stone: 1, wood: 1} 
+- Make Iron Pickaxe: {facing: furnace, iron: 1, coal: 1, wood: 1}
+
+[# II. Rules About the World]
+- No assumptions or guesses: Your understanding might be wrong. Always verify everything, check your inventory.
+- Actions are not guaranteed to succeed: Many actions can fail. Always double-check your inventory, or some reference, before proceeding.
+- Health stats: The higher the number, the better.
+    - if low on hunger, Navigate to a cow and collect the cow; if low on drink, navigate to water and collect water; if low on energy, sleep.
+- Collecting or attacking: Face the material, have the right tools, and use the "do" action repeatedly.
+- Navigator tool: 
+  - Use to find or face targets, and then collect the target.
+  - It fails if the target doesn’t exist.
+  - It always navigates to the nearest material, so don’t use it repeatedly for the same material until you collect the piece.
+- Crafting tools requires a table. For example, to craft a wood_pickaxe, navigate to a table and make_wood_pickaxe.
+- If you want a table, you have to make a table yourself using "place_table". Note, place a table consumes two woods.
+- Always place a furnace next to a table. navigate to a table, and face the grass nearby it and then place a furnace.
+- Placed items: Once placed, don’t place again unless necessary, as it uses more materials. Just navigate to the placed item. For example, don't need to place a table again if placed.
+- Use Navigator over move_down, move_left, move_right, move_up to resrouces.
+- If there alerady exist a table or furnace, do not try to place another one as it wastes resources. Just navigate to it if you want to use it.
+- To collect wood, navigate to a tree.
+- share:
+  - At each timestep, you may choose to share one material in your inventory to another agent.
+  - You can use this feature to help speed up the crafting process.
+
+[# III. Tips]
+Here is an example trajectory for obtaining diamond. Use it as reference.
+1. place table
+2. craft a wood pickaxe
+3. craft a stone pickaxe
+4. craft an iron pickaxe
+5. place a furnace
+6. collect diamond
+
+[# IV. Tips on Planning]
+- Try not use noop. There must be some other action to take... unless you have a strong reason.
+- Start the long term goal with: place table, then wood pickaxe, ...
+- Place one table is enough.
+- Place one furnace is enough.
+- If prerequisites is statisfied, you can continue to [do, make].
+- If the prerequisites for your long term goal is met, stop the current goal and work on completing the long term goal.
+- If your long term goal is almost ready, focus on long term goal.
