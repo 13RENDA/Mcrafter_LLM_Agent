@@ -215,4 +215,4 @@ dependencies:
       - tqdm==4.67.1
       - tzdata==2025.2
       - urllib3==2.5.0
-prefix: /Users/brenda/miniconda3/envs/mcrafter
+prefix: /Your/path/to/mcrafter

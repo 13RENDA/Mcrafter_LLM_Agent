@@ -21,7 +21,7 @@ def local_image_to_data_url(image_path):
 
 
 # read a image 
-textures = local_image_to_data_url("/Users/brenda/Desktop/AI_Agents/1012_6_agent/memory_system/textures.png")
+textures = local_image_to_data_url("Your/path/to/textures.png")
 
 #load the text from the file
 def generate_inquiry(vision, description=""):

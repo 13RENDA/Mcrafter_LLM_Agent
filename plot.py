@@ -209,7 +209,7 @@ class Plotter:
         # Add icons above each task
         for i, img_path in enumerate(self.picture_names[:len(x_values)]):
             try:
-                full_path = os.path.join('/Users/brenda/Desktop/AI_Agents/1012_6_agent', img_path)
+                full_path = os.path.join('Your/path/to/mcrafter', img_path)
                 img = mpimg.imread(full_path)
                 imagebox = OffsetImage(img, zoom=0.3)  # Adjust zoom as needed
                 ab = AnnotationBbox(imagebox, (x_values[i], means_max[i]), frameon=False, zorder=10)

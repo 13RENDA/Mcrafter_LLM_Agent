@@ -2,6 +2,10 @@
 
 A multi-agent simulation system built on the Crafter environment, featuring AI agents with memory systems, knowledge graphs, and advanced decision-making capabilities.
 
+# LLM-Powered Decentralized Generative Agents
+## Project Website
+Visit the project site: [https://happyeureka.github.io/damcs](https://happyeureka.github.io/damcs)
+
 ## 🎯 Overview
 
 This project implements a sophisticated multi-agent system where AI agents collaborate to achieve goals in a Minecraft-inspired 2D environment. The system includes:

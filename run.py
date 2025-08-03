@@ -145,14 +145,12 @@ def main():
         simulation = CompleteMulitAgentSimulation(agents, env, num_steps, agent_num)
         results_df = simulation.run_simulation()['stats_df']
         # Save stats, file name contains round number and agent number
-        # save_path = f"/Users/brenda/Desktop/AI_Agents/1012_6_agent/results/stats_round_{round_idx+1}_agent_{agent_num}.csv"
-        # df = simulation.reporter.log_stats(simulation.agents)
-        save_path = f"/Users/brenda/Desktop/AI_Agents/1012_6_agent/results/stats_round_2_agent_{agent_num}.csv"
+        save_path = f"/your/path/to/results/stats_round_{round_idx+1}_agent_{agent_num}.csv"
         results_df.to_csv(save_path, index=False)
         all_stats.append(results_df)
     # combine all rounds results
     final_df = pd.concat(all_stats, ignore_index=True)
-    all_rounds_path = "/Users/brenda/Desktop/AI_Agents/1012_6_agent/results/all_rounds_stats.csv"
+    all_rounds_path = "/your/path/to/results/all_rounds_stats.csv"
 
     # if file exists, append to it, otherwise create a new file
     final_df.to_csv(
@@ -163,7 +161,7 @@ def main():
     )
     print("Appended results to all_rounds_stats.csv")
     plotter = Plotter()
-    plotter.plot(['/Users/brenda/Desktop/AI_Agents/1012_6_agent/results/all_rounds_stats.csv'], legend_labels=['Six Agents with Communication'])
+    plotter.plot(['/your/path/to/results/all_rounds_stats.csv'], legend_labels=['Six Agents with Communication'])
 
 
 if __name__ == "__main__":
